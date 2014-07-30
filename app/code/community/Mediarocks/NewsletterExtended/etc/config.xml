@@ -49,9 +49,6 @@
             </newsletter_subscriber_save_before>
         </events>
         <blocks>
-            <newsletter>
-                <class>Mediarocks_NewsletterExtended_Block</class>
-            </newsletter>
             <adminhtml>
                 <rewrite>
                     <newsletter_subscriber_grid>Mediarocks_NewsletterExtended_Adminhtml_Block_Newsletter_Subscriber_Grid</newsletter_subscriber_grid>
