@@ -35,9 +35,9 @@ class Mediarocks_NewsletterExtended_Block_Subscribe extends Mage_Newsletter_Bloc
     protected function _toHtml()
     {
 		// set extended template if no template or the default template is set (that makes it possible to override the template via layout.xml)
-    	if (!$this->getTemplate() || $this->getTemplate() == 'newsletter/subscribe.phtml') {
-			$this->setTemplate('mediarocks/newsletterextended/subscribe.phtml');
-        }
+//    	if (!$this->getTemplate() || $this->getTemplate() == 'newsletter/subscribe.phtml') {
+//			$this->setTemplate('mediarocks/newsletterextended/subscribe.phtml');
+//        }
 		
         return parent::_toHtml();
     }
