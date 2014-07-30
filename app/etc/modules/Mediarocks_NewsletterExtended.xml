@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mediarocks_NewsletterExtended>
+            <active>true</active>
+			<codePool>community</codePool>
+            <depends>
+            	<Mage_Newsletter />
+            </depends>
+        </Mediarocks_NewsletterExtended>
+    </modules>
+</config>

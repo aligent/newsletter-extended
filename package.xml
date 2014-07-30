@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mediarocks_NewsletterExtended</name>
+    <version>0.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This free module adds fields for gender, first name and last name to the newsletter subscription form.</summary>
+    <description>&lt;p&gt;Collect additional data even from your guest subscribers by installing this module. It provides an extended newsletter subscription form with input fields for gender, first name and last name and you have access to all the personal information of your subscribers in subscribers grid in your admin panel. Your can then easily export them via CSV/XML for further newsletter marketing.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;Features:&lt;/h3&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Installed in seconds&lt;/li&gt;&#xD;
+&lt;li&gt;No configuration required&lt;/li&gt;&#xD;
+&lt;li&gt;Collect personal information from you guest subscribers&lt;/li&gt;&#xD;
+&lt;li&gt;Extended backend grid&lt;/li&gt;&#xD;
+&lt;li&gt;CSV/XML export via admin panel&lt;/li&gt;&#xD;
+&lt;li&gt;Translation via inline translation or customizable translation.csv file&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&#xD;
+&lt;h3&gt;Usage:&lt;/h3&gt;&#xD;
+&lt;p&gt;You don't have to configure anything if you are using the default newsletter subscription block defined in /app/design/frontend/base/default/layout/newsletter.xml). Just install the extension like described below, clear your cache and you're done.&lt;/p&gt;&#xD;
+&lt;p&gt;If you don't use the default newsletter template (newsletter/subscribe.phtml) make sure to adjust your template's input fields accordingly to the extended newsletter template in app/design/frontend/base/default/template/mediarocks/newsletterextended/subscribe.phtml&lt;/p&gt;&#xD;
+&lt;p&gt;This extension does not (by now) support the internal newsletter system with its variables.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;Installation:&lt;/h3&gt;&#xD;
+&lt;p&gt;&lt;strong&gt;Installation via Magento Connect Manager:&lt;br /&gt;&lt;/strong&gt;Open the Connect Manager and upload the extension file via "Direct package file upload".&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;strong&gt;Manual Installation:&lt;br /&gt;&lt;/strong&gt;Unpack the extension and upload the app folder to your Magento root folder.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;Uninstall Module:&lt;/h3&gt;&#xD;
+&lt;p&gt;To uninstall the module, please use the Magento Connect Manager or remove the following files and folders from your system manually:&lt;br /&gt;&lt;br /&gt;&#xD;
+- app/etc/modules/Mediarocks_NewsletterExtended.xml&lt;br /&gt;&#xD;
+- app/code/community/Mediarocks/NewsletterExtended&lt;br /&gt;&#xD;
+- app/design/frontend/base/default/template/mediarocks/newsletterextended&lt;br /&gt;&#xD;
+- app/locale/de_DE/Mediarocks_NewsletterExtended.csv&lt;br /&gt;&#xD;
+- app/locale/en_US/Mediarocks_NewsletterExtended.csv&lt;/p&gt;</description>
+    <notes>Update (stable)&#xD;
+&#xD;
+- now extending Mage_Newsletter_Block_Subscribe</notes>
+    <authors><author><name>Media Rocks</name><user>mediarocks</user><email>info@mediarocks.de</email></author></authors>
+    <date>2014-01-22</date>
+    <time>12:50:12</time>
+    <contents><target name="magecommunity"><dir name="Mediarocks"><dir name="NewsletterExtended"><dir name="Adminhtml"><dir name="Block"><dir name="Newsletter"><dir name="Subscriber"><dir name="Grid"><dir name="Renderer"><file name="Firstname.php" hash="35bd5a0fa2cfe39f1b1e314fb001ba21"/><file name="Gender.php" hash="1a7c6169f883a4154acd576c8e1c5727"/><file name="Lastname.php" hash="24133a0388cd2127e22ab16b9de40ac2"/></dir></dir><file name="Grid.php" hash="90ca333d68314c9840e1927566f1a360"/></dir></dir></dir></dir><dir name="Block"><file name="Subscribe.php" hash="a1c51630ea96934091fde78d75482aa9"/></dir><dir name="Helper"><file name="Data.php" hash="0cd2b0a5ea999a957b193e0f85740f31"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Subscriber"><file name="Collection.php" hash="6dc31b1b0b7348c6180dc4ea68a3c493"/></dir></dir><file name="Observer.php" hash="05d4e380c3769ea592b9395b8221bc3e"/><dir name="Resource"><dir name="Mysql4"><file name="Setup.php" hash="8779f2a2c51901e1259f2cf6aca70ad4"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="6b97223ce9df0864366d6cbcb89c99db"/></dir><dir name="sql"><dir name="mediarocks_newsletterextended_setup"><file name="mysql4-install-0.1.0.php" hash="cf2ce58b157d45b57c74aeceedbbacd7"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="mediarocks"><dir name="newsletterextended"><file name="subscribe.phtml" hash="929edd02958650dabedd9b1b85eb55c6"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mediarocks_NewsletterExtended.xml" hash="389b9bb749ad856782584f14c98a2bd8"/></dir></target><target name="magelocale"><dir><dir name="de_DE"><file name="Mediarocks_NewsletterExtended.csv" hash="7d5d50e6a62d828b7e7cbe9c8d3bd89a"/></dir><dir name="en_US"><file name="Mediarocks_NewsletterExtended.csv" hash="d2e756593e822d220073a9824b82b227"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.9.0</max></php></required></dependencies>
+</package>
