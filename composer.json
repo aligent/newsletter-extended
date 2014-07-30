@@ -1,0 +1,10 @@
+{
+    "name":"aligent/newsletter-extended",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/aligent/newsletter-extended",
+    "description":"Collects additional data from your guest newsletter subscribers",
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}

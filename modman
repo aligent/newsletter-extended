@@ -1,0 +1,5 @@
+app/code/community/Mediarocks/NewsletterExtended app/code/community/Mediarocks/NewsletterExtended
+app/etc/modules/Mediarocks_NewsletterExtended.xml app/etc/modules/Mediarocks_NewsletterExtended.xml
+app/design/frontend/base/default/template/mediarocks/newsletterextended app/design/frontend/base/default/template/mediarocks/newsletterextended
+app/locale/en_US/Mediarocks_NewsletterExtended.csv app/locale/en_US/Mediarocks_NewsletterExtended.csv
+app/locale/de_DE/Mediarocks_NewsletterExtended.csv app/locale/de_DE/Mediarocks_NewsletterExtended.csv
