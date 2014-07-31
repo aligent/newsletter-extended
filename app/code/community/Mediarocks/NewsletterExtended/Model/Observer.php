@@ -33,11 +33,6 @@ class Mediarocks_NewsletterExtended_Model_Observer
 {
     public function newsletterSubscriberChange(Varien_Event_Observer $observer)
 	{
-		// fast quit if user is logged in
-		if (Mage::getSingleton('customer/session')->isLoggedIn()) {
-			return $this;
-		}
-		
 		$subscriber = $observer->getEvent()->getSubscriber();
         $data = Mage::app()->getRequest()->getParams();
 		
